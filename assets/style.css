@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+}
+
+
+.container {
+    width: 70%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.container__informacion {
+    flex: 1;
+    padding: 3rem;
+    justify-content: center;
+}
+
+h2 {
+    
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-left:1rem;
+    
+}
+
+.container__texto {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container__campo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    margin: 30px;
+     gap: 1rem; 
+}
+
+.texto__parrafo {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__input {
+    width: 130px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.boton{
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #1875E8;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 13rem;
+    height: 60px;
+    box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.50);
+    cursor: pointer;
+}
+
+.container__contrasena {
+    width: 400px;
+    height: 70px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-candado{
+    max-width: 50%;
+    height: auto;
+    margin-top: 2rem;
+    opacity: 0.9;
+}
+
+/* @media screen and (min-width: 750px) {
+    .container-candado {
+        max-width: 40%; 
+        height: auto;
+        margin-top: 2rem;
+        opacity: 0.9;
+    }
+} */

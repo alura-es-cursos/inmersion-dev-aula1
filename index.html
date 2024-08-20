@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <main class="container">
+        <div class="container__informacion">
+            <h2>Generador de Contraseñas</h2>
+            <div class="container__texto">
+                <div class="container__campo"> 
+                    <label class="texto__parrafo">Cantidad de caracteres 
+                        <input class="container__input" type="number" id="cantidad" >
+                    </label>
+                        <button class="boton" id="generar" onclick="generar()" >Generar</button>
+                    </div> 
+                <div class="container__campo">
+                    <input class="container__contrasena" type="text" id="contrasena" placeholder="contraseña">
+                </div>
+            </div> 
+        </div>
+        <img class="container-candado" src="./assets/img/candado.png" alt=""> 
+    </main>
+    <script src="main.js"></script> 
+</body>
+</html>
