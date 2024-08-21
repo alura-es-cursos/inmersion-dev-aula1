@@ -1,10 +1,8 @@
-
 let cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('generar');
 let contrasena = document.getElementById('contrasena');
 
-const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+abcdefghijklmnopqrstuvwxyz0123456789';
-
+const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 function generar(){
 
@@ -33,7 +31,7 @@ function generar(){
     }
     contrasena.value = password;
 } 
-
+ 
 
 
 
