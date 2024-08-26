@@ -6,37 +6,26 @@ const cadenaCaracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01
 
 function generar(){
 
-    let numeroDigitado = parseInt(cantidad.value);
-    console.log(numeroDigitado);
-    
-    if (isNaN(numeroDigitado)) {
-        alert('Debe ingresar un número válido');
-        return;
+    let numeroDigitado = parseInt (cantidad.value);
+
+    if( numeroDigitado < 8){
+        alert("La cantidad de caracteres tiene que ser mayor que 8");
     }
 
-    if (numeroDigitado < 6) {
-        alert('La contraseña debe tener 6 o más caracteres');
-        return;
-    }
-
-    
     let password = '';
-    for(let i = 0; i < numeroDigitado; i++ ) {
+    for(let i= 0; i < numeroDigitado; i++){
 
         let caracterAleatorio = cadenaCaracteres[Math.floor(Math.random() * cadenaCaracteres.length)];
-        
-        password += caracterAleatorio;
-        console.log('Contraseña construida: ' + password);
-    
+        console.log(caracterAleatorio);
+
+        password+=caracterAleatorio;
+
+
     }
-    contrasena.value = password;
-} 
- 
 
+     contrasena.value = password;
 
-
-
-
+}
 
 
 
